@@ -1,0 +1,2 @@
+# 创建 Sentry 项目后获取
+dsn = "https://examplePublicKey@o0.ingest.sentry.io/0"
