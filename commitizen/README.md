@@ -13,7 +13,11 @@ Commitizen 是一个用于标准化提交消息的命令行工具。它通过提
     在项目中执行
     ```
     npm init --yes # 创建 package.json 文件
+    
+    # npm 
     commitizen init cz-conventional-changelog --save-dev --save-exact
+    # or yarn
+    commitizen init cz-conventional-changelog --yarn --dev --exact
     ```
 3. 提交 commit  
     使用 `git cz`  代替 `git commit`。
