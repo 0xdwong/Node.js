@@ -9,3 +9,4 @@
 - [openai API](./openai/README.md)
 - [commitizen](./commitizen/README.md) 标准化 commit 工具
 - [Redis](./redis/README.md)
+- [Simhash 计算文本相似度](./simhash/README.md)
