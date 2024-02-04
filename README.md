@@ -8,3 +8,4 @@
 - ABI工具 [whatsabi ](https://github.com/0xdwong/blockchain/blob/main/tools/whatsabi/README.md)
 - [openai API](./openai/README.md)
 - [commitizen](./commitizen/README.md) 标准化 commit 工具
+- [Redis](./redis/README.md)

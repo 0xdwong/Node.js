@@ -1,0 +1,8 @@
+{
+  "name": "redis-demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^5.3.2"
+  }
+}
