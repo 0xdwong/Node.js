@@ -1,0 +1,11 @@
+{
+  "name": "ipfs-helia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@helia/strings": "^3.0.4",
+    "helia": "^4.2.3"
+  }
+}
