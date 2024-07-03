@@ -16,5 +16,9 @@ npm install --save @pinata/sdk
 - 上传 JSON 数据到 IPFS `pinJSONToIPFS`，参考 [demo](./pinFile.js)
 - pin IPFS 文件 `pinByHash`，参考 [demo](./pinFile.js)，需付费计划 Key 才使用
 
+3. 预览
+上传的文件可以通过网关查看，比如 `https://<your-gateway-domain>/ipfs/<IpfsHash>`
+
+
 ## 参考链接
-[pinata-sdk](https://docs.pinata.cloud/sdks/pinata-sdk)
+- [pinata-sdk](https://docs.pinata.cloud/sdks/pinata-sdk)
