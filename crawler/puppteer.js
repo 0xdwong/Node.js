@@ -3,7 +3,10 @@ const fs = require('fs');
 
 const puppeteer = require('puppeteer');
 
-const url = `https://medium.com/movementlabsxyz/the-movevm-a-new-era-of-blockchain-precision-and-safety-a1b5bd4a65ea`;
+let url = `https://medium.com/movementlabsxyz/the-movevm-a-new-era-of-blockchain-precision-and-safety-a1b5bd4a65ea`;
+url = 'https://learnblockchain.cn/article/8598';
+
+
 async function fun1() {
     /**
      * Loader uses `page.evaluate(() => document.body.innerHTML)`
@@ -14,7 +17,7 @@ async function fun1() {
     const docs = await loader.load();
     const document = docs[0].pageContent;
     console.log(document);
-    fs.writeFileSync('xx.html', document);
+    fs.writeFileSync('medium.html', document);
 }
 
 async function fun2() {
