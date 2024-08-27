@@ -1,0 +1,11 @@
+{
+  "name": "turndown",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "joplin-turndown-plugin-gfm": "^1.0.12",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}

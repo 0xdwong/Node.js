@@ -1,0 +1,60 @@
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Feature</strong></td>
+            <td><strong>Aptos / Move</strong></td>
+            <td><strong>SVM</strong></td>
+            <td><strong>EVM</strong></td>
+            <td><strong>Sui / Move</strong></td>
+        </tr>
+        <tr>
+            <td>Data storage</td>
+            <td>Stored at a global address or within the owner’s account</td>
+            <td>Stored within the owner’s account associated with a program</td>
+            <td>Stored within the account associated with a smart contract</td>
+            <td>Stored at a global address</td>
+        </tr>
+        <tr>
+            <td>Parallelization</td>
+            <td>Capable of inferring parallelization at runtime within Aptos</td>
+            <td>Requires specifying all data accessed</td>
+            <td>Currently serial, nothing in production</td>
+            <td>Requires specifying all data accessed</td>
+        </tr>
+        <tr>
+            <td>Transaction safety</td>
+            <td>Sequence number</td>
+            <td>Transaction uniqueness</td>
+            <td>Nonces, similar to sequence numbers</td>
+            <td>Transaction uniqueness</td>
+        </tr>
+        <tr>
+            <td>Type safety</td>
+            <td>Module structs and generics</td>
+            <td>Program structs</td>
+            <td>Contract types</td>
+            <td>Module structs and generics</td>
+        </tr>
+        <tr>
+            <td>Function calling</td>
+            <td>Static dispatch</td>
+            <td>Static dispatch</td>
+            <td>Dynamic dispatch</td>
+            <td>Static dispatch</td>
+        </tr>
+        <tr>
+            <td>Authenticated Storage</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Object accessibility</td>
+            <td>Guaranteed to be globally accessible</td>
+            <td>Not applicable</td>
+            <td>Not applicable</td>
+            <td>Can be hidden</td>
+        </tr>
+    </tbody>
+</table>

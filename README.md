@@ -10,3 +10,6 @@
 - [commitizen](./commitizen/README.md) 标准化 commit 工具
 - [Redis](./redis/README.md)
 - [Simhash 计算文本相似度](./simhash/README.md)
+- [Pinata IPFS 服务](./ipfs/pinata/README.md)
+- [turndown 将 HTML 转换为 Markdown](./turndown/README.md)
+
