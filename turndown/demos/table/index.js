@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const TurndownService = require('turndown');
-var turndownPluginGfm = require('joplin-turndown-plugin-gfm');
+const turndownPluginGfm = require('joplin-turndown-plugin-gfm');
 
 const turndownService = new TurndownService({
     headingStyle: 'atx', // #形式的标题
@@ -18,14 +18,13 @@ turndownService.use(gfm)
 turndownService.use([tables, strikethrough])
 
 
-
 async function main() {
-    let html = fs.readFileSync(path.join(__dirname,'input.html')).toString();
+    let html = fs.readFileSync(path.join(__dirname, 'input.html')).toString();
 
     // 将 HTML 文档转换为 Markdown
     const markdownContent = turndownService.turndown(html);
 
-    fs.writeFileSync(path.join(__dirname,'output.md'), markdownContent);
+    fs.writeFileSync(path.join(__dirname, 'output.md'), markdownContent);
 }
 
 main();
