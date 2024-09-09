@@ -1,17 +1,17 @@
 require('dotenv').config();
 const { ethers } = require('ethers');
-const provider = new ethers.providers.JsonRpcProvider(process.env.ETHEREUM_RPC_URL);
+const provider = new ethers.JsonRpcProvider(process.env.ETHEREUM_RPC_URL);
 
 async function checkBalance(address) {
-    let lastBalance = ethers.BigNumber.from('0');
+    let lastBalance = BigInt(0);
 
     setInterval(async () => {
         const currentBalance = await provider.getBalance(address);
-        if (!currentBalance.eq(lastBalance)) {
-            console.log(`Balance updated: ${ethers.utils.formatEther(currentBalance)} ETH`);
+        if (currentBalance != lastBalance) {
+            console.log(`Balance updated: ${ethers.formatEther(currentBalance)} ETH`);
             lastBalance = currentBalance;
         }
-    }, 1 * 1000); // 每分钟检查一次
+    }, 60 * 1000); // 每分钟检查一次
 }
 
 async function main() {
